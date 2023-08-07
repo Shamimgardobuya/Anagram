@@ -13,13 +13,26 @@ def subject(word):
     new_string=sorted(a)
     new_stringb=sorted(b)
     leprechaun=["top","opt"]
-    if new_string==new_stringb and new_stringb in leprechaun:
+    if new_string==new_stringb or new_stringb in leprechaun:
         print("Yay,you have found the two anagrams")
     else:
         print("You can try again ")
 
 subject(word=(str(input("Enter start"))))
 #converting to list then sort the two list.
+def subject(word):
+    # word=str(input("Enter start"))
+    a=str(input("Enter a word "))
+    b=str(input("From your word,think of another word "))
+    new_string=sorted(a)
+    new_stringb=sorted(b)
+    leprechaun=["top","opt"]
+    if len(new_string) == len(new_stringb) and new_stringb in leprechaun:
+        print("Yay,you have found the two anagrams")
+    else:
+        print("You can try again ")
+
+subject(word=(str(input("Enter start"))))
 #request for 2 users input
 #using list comprehension loop through each character.
 #sort the two list and compare them 
